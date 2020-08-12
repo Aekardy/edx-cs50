@@ -1,0 +1,5 @@
+Get input fromm user
+Check if input is between 1 to 8 (only int) or else goto line 1
+For loop input number of times (i):
+    Print i number of #
+    goto new line 
