@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles2.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Books</title>
+        <!--<script defer src="code.js"></script>-->
+    </head>
+    
+    <body class="p2">
+        
+        <!--<button id="red" class="btn btn-primary" style="background-color: rgba(255,0,0,0.5);">R</button>-->
+        <!--<button id="green" class="btn btn-primary" style="background-color: rgba(0,255,0,0.5);">G</button>-->
+        <!--<button id="blue" class="btn btn-primary" style="background-color: rgba(0,0,255,0.5);">B</button>-->
+        <!--<button id="default" class="btn btn-primary" style="background-color: azure; color: black">Default</button>-->
+
+        <a href="index.html" style="float: right; padding: 5px; color: white;"><b><u>Homepage</u></b></a>
+        <a href="page3.html" style="float: right; padding: 5px; color: white;"><b><u>Games</u></b></a>
+        <a href="page1.html" style="float: right; padding: 5px; color: white;"><b><u>About</u></b></a>
+        <br><br>
+        
+        <div style="background-color: white; opacity: 0.7; font-family: Adobe Garamond; text-align: center;">
+            <span class="font-weight-bolder" style="font-size: 3em;">BOOKS! </span><span class="font-weight-bold" style="opacity:0.6; font-size: 2em;">BEST FRIEND TO INTROVERTS!</span>
+        </div>
+        
+        <!--<div style="background-color: white; opacity: 0.7; font-family: Adobe Garamond;">-->
+        <!--    ipsum lopsum episom populi strats dolum lorrem guialo rooper tagern fillait-->
+        <!--</div>-->
+        
+        <div class="cont">
+            <input type="radio" name="images" id="i1" checked>
+            <input type="radio" name="images" id="i2">
+            <input type="radio" name="images" id="i3">
+            
+            <div class="slide_img" id="one" style="background-color: Purple; text-align: center; color: white;">
+                <!--<img src="books-pixel-art.png">-->
+                <h2>MY LIBRARY</h2>
+                <br><br>
+                <p> So in the following next slides, I will list my favourite books which I have read, and will also mention some books on my "to read" list too! Also, anyone reading this, you can tell me your options too, just head to this <a href="page1.html" style="color: white;"><u>page</u></a> and contact me as soon as possible!</p>
+                <p>Click the right panel to go to the next slide.</p>
+                <label class="prev" for="i3"><span></span></label>
+                <label class="next" for="i2"><span></span></label>
+            </div>
+            
+            <div class="slide_img" id="two" style="background-color: RoyalBlue; text-align: center; color: white;">
+                <!--<img src="game-controllers-pixel-art.jpg">-->
+                <h2>FICTION</h2>
+                <br><br>
+                <ol>
+                    <li> Harry Potter series</li>
+                    <li> Sherlock Holmes</li>
+                    <li> Satyajit Ray's Feluda</li>
+                    <li> To kill a mockingbird</li>
+                    <li> The Invisible Man</li>
+                    <li> The Lord of the Rings (to read)</li>
+                    <li> 1984 (to read)</li>
+                    <li> Ready Player One (to read)</li>
+                </ol>
+                <label class="prev" for="i1"><span></span></label>
+                <label class="next" for="i3"><span></span></label>
+            </div>
+            
+            <div class="slide_img" id="three" style="background-color: Brown; text-align: center; color: white;">
+                <!-- <img....>-->
+                <h2>NON-FICTION</h2>
+                <!--<p></p>-->
+                <ul style="padding: 30px;">
+                    <li> Losing the signal (the spectacular rise and fall of BlackBerry)</li>
+                    <li> The war of art</li>
+                    <li> The subtle art of not giving a f*ck</li>
+                    <li> Rich dad, poor dad</li>
+                    <li> Man's search for meaning</li>
+                    <li> Bad Blood: secrets and lies in a Silicon Valley startup (to read)</li>
+                    <li> The art of war (to read)</li>
+                    <li> Arthashastra (to read)</li>
+                    <li> The smartest guys in the room (to read)</li>
+                </ul>
+                <label class="prev" for="i2"><span></span></label>
+                <label class="next" for="i1"><span></span></label>
+            </div>
+            
+            <div id="nav">
+                <label for="i1" class="dots" id="dot1"></label>
+                <label for="i2" class="dots" id="dot2"></label>
+                <label for="i3" class="dots" id="dot3"></label>
+            </div>
+            
+        </div>
+
+        <footer class="container mt-4 " style="color: white;">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">This project was made as part of <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science">edx's CS50</a> web track.</p>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
