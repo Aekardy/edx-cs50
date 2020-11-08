@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(length) %}
+            <tr>
+                <td>{{ data[i]["symbol"] }}</td>
+                <td>{{ data[i]["traded"] }}</td>
+                <td>{{ data[i]["price"] | usd }}</td>
+                <td>{{ data[i]["transacted"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

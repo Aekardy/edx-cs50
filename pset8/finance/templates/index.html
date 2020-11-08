@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(length) %}
+            <tr>
+                <td>{{ row[i]["symbol"] }}</td>
+                <td>{{ row[i]["name"] }}</td>
+                <td>{{ row[i]["SUM(shares)"] }}</td>
+                <td>{{ row[i]["price"] | usd }}</td>
+                <td>{{ (row[i]["SUM(shares)"]*row[i]["price"]) | usd }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td colspan="3"></td>
+                <td>${{ cash }}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td><b>${{ cash_tot }}</b></td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
